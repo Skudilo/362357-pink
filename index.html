@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrap">
         <a class="page-header__logo">Pink</a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -15,13 +15,13 @@
               <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a href="photo.html"  class="main-nav__link">Фотографии</a>
-              </li>
-            <li class="main-nav__item">
-              <a href="form.html"  class="main-nav__link">Конкурс</a>
+              <a href="photo.html" class="main-nav__link">Фотографии</a>
             </li>
             <li class="main-nav__item">
-              <a href="#"  class="main-nav__link">HTML Academy</a>
+              <a href="form.html" class="main-nav__link">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#" class="main-nav__link">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -30,22 +30,22 @@
     <main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение "PINK"</h1>
       <section class="intro">
-        <div class="intro__wrapper">
-        <section class="download-app">
-          <a class="download-app__button button" href="#">Скачать приложение</a>
-          <ul class="download-app__os">
-            <li class="download-app__item">
-              <a class="download-app__link download-app__link--ios" href="#">ios</a>
-            </li>
-            <li class="download-app__item">
-              <a class="download-app__link download-app__link--android" href="#">android</a>
-            </li>
-            <li class="download-app__item">
-              <a class="download-app__link download-app__link--windows" href="#">windows</a>
-            </li>
-          </ul>
-          <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </section>
+        <div class="intro__wrap">
+          <section class="download-app">
+            <a class="download-app__button button" href="#">Скачать приложение</a>
+            <ul class="download-app__os">
+              <li class="download-app__item">
+                <a class="download-app__link download-app__link--ios" href="#">ios</a>
+              </li>
+              <li class="download-app__item">
+                <a class="download-app__link download-app__link--android" href="#">android</a>
+              </li>
+              <li class="download-app__item">
+                <a class="download-app__link download-app__link--windows" href="#">windows</a>
+              </li>
+            </ul>
+            <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </section>
         </div>
       </section>
       <section class="advantages">
@@ -68,9 +68,9 @@
           </div>
         </div>
       </section>
-      <section class="reviews">
-       <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
-        <div class="reviews__slides-wrapper">
+      <section class="reviews-slider">
+        <h2 class="visually-hidden">Отзывы о нашем приложении</h2>
+        <div class="reviews__slides-wrap">
           <div class="reviews__slides">
             <blockquote class="reviews__item">
               <cite class="reviews__author">Николай Петров</cite>
@@ -84,7 +84,7 @@
               <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
-            <p class="reviews__toggles slider__toggles">
+            <p class="reviews__toggles">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle" type="button">2</button>
               <button class="slider__toggle" type="button">3</button>
@@ -94,7 +94,7 @@
       </section>
       <section class="price">
         <h2 class="visually-hidden">Таблица с ценами</h2>
-        <div class="price__slides-wrapper">
+        <div class="price__slides-wrap">
           <div class="price__slides">
             <table class="price__table">
               <tr class="price__table-row">
@@ -113,7 +113,7 @@
                 <td class="price__table-cell">Комментарии</td>
               </tr>
             </table>
-            <p class="price__toggles slider__toggles">
+            <p class="price__toggles">
               <button class="slider__toggle" type="button">1</button>
               <button class="slider__toggle" type="button">2</button>
               <button class="slider__toggle" type="button">3</button>
@@ -124,14 +124,14 @@
       <section class="contacts">
         <div class="contacts-info">
           <h2 class="contacts-info__title">Остались вопросы? Свяжитесь с нами!</h2>
-          <div class="contacts-info__item-wrapper">
+          <div class="contacts-info__item-wrap">
             <div class="contacts-info__item">
               <h3 class="contacts-info__item-title">Звоните:</h3>
-              <p class="contacts-info__item-text">+7 (812) 555-66-66</p>
+              <a class="contacts-info__item-text" href="tel:+78125556666">+7 (812) 555-66-66</a>
             </div>
             <div class="contacts-info__item">
               <h3 class="contacts-info__item-title">Пишите:</h3>
-              <p class="contacts-info__item-text">mail@htmlacademy.ru</p>
+              <a class="contacts-info__item-text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </div>
             <div class="contacts-info__item">
               <h3 class="contacts-info__item-title">Приезжайте в гости:</h3>
@@ -142,25 +142,5 @@
         <div class="contacts-map"></div>
       </section>
     </main>
-    <footer class="page-footer page-footer__hidden">
-      <div class="page-footer__wrapper">
-        <a class="page-footer__logo">Pink</a>
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link social__link--tw" href="#">Twitter</a>
-          </li>
-           <li class="social__item">
-            <a class="social__link social__link--fb" href="#">Facebook</a>
-          </li>
-           <li class="social__item">
-            <a class="social__link social__link--yt" href="#">Youtube</a>
-          </li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright-link" href="#">HTML-Academy</a>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>

@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrap">
         <a class="page-header__logo" href="index.html">Pink</a>
         <nav class="main-nav">
           <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -28,96 +28,98 @@
       </div>
     </header>
     <main>
-      <section class="page-title">
+      <div class="page-title">
         <h1 class="page-title__text">Фотографии пользователей</h1>
-      </section>
+      </div>
     <form class="competition-form" action="https://echo.htmlacademy.ru" method="post">
-      <h2 class="competition-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
-      <fieldset class="fiedlset-name">
-        <p class="fieldset-name__item">
-          <label class="fieldset-name__label" for="surname">Фамилия:</label>
-          <input class="fieldset-name__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию &#42">
-        </p>
-        
-        <p class="fieldset-name__item">
-          <label class="fieldset-name__label" for="name">Имя:</label>
-          <input class="fieldset-name__input" type="text" id="name" name="name" placeholder="Введите ваше имя &#42">
-        </p>
-        
-        <p class="fieldset-name__item">
-          <label class="fieldset-name__label" for="patronymic">Отчество:</label>
-          <input class="fieldset-name__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
-        </p>
-      </fieldset>
-      
-      <fieldset class="fieldset-achievements">
-        <h2 class="fieldset-achievements__title">Ваши безбашенные достижения в путешествии</h2>
-        <div class="fieldset-achievements__wrap">
-          <p fieldset-achievements__item>
-            <input class="fieldset-achievements__input" type="checkbox" id="achievement-1" name="achievement-1" checked>
-            <label for="achievement-1">Сделал селфи с акулой</label>
+      <div class="competition-form__wrap">
+        <h2 class="competition-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+        <fieldset class="fiedlset-name">
+          <p class="fieldset-name__item">
+            <label class="fieldset-name__label" for="surname">Фамилия:</label>
+            <input class="fieldset-name__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию &#42;" required>
           </p>
-          <p fieldset-achievements__item>
-            <input class="fieldset-achievements__input" type="checkbox" id="achievement-2" name="achievement-2" checked>
-            <label for="achievement-2">Обгорел на пляже</label>
+
+          <p class="fieldset-name__item">
+            <label class="fieldset-name__label" for="name">Имя:</label>
+            <input class="fieldset-name__input" type="text" id="name" name="name" placeholder="Введите ваше имя &#42;" required>
           </p>
-          <p fieldset-achievements__item>
-            <input class="fieldset-achievements__input" type="checkbox" id="achievement-3" name="achievement-3">
-            <label for="achievement-3">Видел Чака Норриса</label>
+
+          <p class="fieldset-name__item">
+            <label class="fieldset-name__label" for="patronymic">Отчество:</label>
+            <input class="fieldset-name__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
           </p>
-          <p fieldset-achievements__item>
-            <input class="fieldset-achievements__input" type="checkbox" id="achievement-4" name="achievement-4">
-            <label for="achievement-4">Накупил сувениров</label>
-          </p>
-          <p fieldset-achievements__item>
-            <input class="fieldset-achievements__input" type="checkbox" id="achievement-5" name="achievement-5" checked>
-            <label for="achievement-5">Удержал башню</label>
-          </p>
-          <p fieldset-achievements__item>
-            <input class="fieldset-achievements__input" type="checkbox" id="achievement-6" name="achievement-6">
-            <label for="achievement-6">Разгромил отель</label>
-          </p>
+        </fieldset>
+
+        <fieldset class="fieldset-achievements">
+          <h2 class="fieldset-achievements__title">Ваши безбашенные достижения в путешествии</h2>
+          <div class="fieldset-achievements__wrap">
+            <p class="fieldset-achievements__item">
+              <input class="fieldset-achievements__input" type="checkbox" id="achievement-1" name="achievement-1" checked>
+              <label class="fieldset-achievements__label" for="achievement-1">Сделал селфи с акулой</label>
+            </p>
+            <p class="fieldset-achievements__item">
+              <input class="fieldset-achievements__input" type="checkbox" id="achievement-2" name="achievement-2" checked>
+              <label class="fieldset-achievements__label" for="achievement-2">Обгорел на пляже</label>
+            </p>
+            <p class="fieldset-achievements__item">
+              <input class="fieldset-achievements__input" type="checkbox" id="achievement-3" name="achievement-3">
+              <label class="fieldset-achievements__label" for="achievement-3">Видел Чака Норриса</label>
+            </p>
+            <p class="fieldset-achievements__item">
+              <input class="fieldset-achievements__input" type="checkbox" id="achievement-4" name="achievement-4">
+              <label class="fieldset-achievements__label" for="achievement-4">Накупил сувениров</label>
+            </p>
+            <p class="fieldset-achievements__item">
+              <input class="fieldset-achievements__input" type="checkbox" id="achievement-5" name="achievement-5" checked>
+              <label class="fieldset-achievements__label" for="achievement-5">Удержал башню</label>
+            </p>
+            <p class="fieldset-achievements__item">
+              <input class="fieldset-achievements__input" type="checkbox" id="achievement-6" name="achievement-6">
+              <label class="fieldset-achievements__label" for="achievement-6">Разгромил отель</label>
+            </p>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset-contacts">
+         <p class="fieldset-contacts_item">
+            <label class="fieldset-contacts__label" for="phone">Номер телефона</label>
+            <input class="fieldset-contacts__input" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
+         </p>
+          <p class="fieldset-contacts_item">
+            <label class="fieldset-contacts__label" for="mail">Адрес почты</label>
+            <input class="fieldset-contacts__input" type="text" id="mail" name="mail" placeholder="Введите почту	&#42;" required>
+         </p>
+        </fieldset>
+        <fieldset class="fieldet-os">
+          <h2 class="fieldet-os__title">С каким приложением путешествовали?</h2>
+          <div class="fieldet-os__wrap">
+            <p class="fieldet-os__item">
+              <input class="fieldet-os__input" type="radio" id="ios" name="os" value="ios" checked>
+              <label for="ios">Pink для iOS</label>
+            </p>
+            <p class="fieldet-os__item">
+              <input class="fieldet-os__input" type="radio" id="android" name="os" value="android">
+              <label class="fieldet-os__label" for="android">Pink на Android</label>
+            </p>
+            <p class="fieldet-os__item">
+              <input class="fieldet-os__input" type="radio" id="windows" name="os" value="windows">
+              <label class="fieldet-os__label" for="windows">Windows Phone</label>
+            </p>
+          </div>
+        </fieldset>
+        <fieldset class="fieldset-review">
+          <h2 class="fieldset-review__title">Опишите свои эмоции</h2>
+          <textarea class="fieldset-review__textarea" name="review"  cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <div class="competition-form__button-wrap">
+          <button class="competition-form__button" type="submit">Отправить форму</button>
+          <span class="competition-form__hint">&#42; - обязательные поля</span>
         </div>
-      </fieldset>
-      <fieldset class="fieldset-contacts">
-       <p class="fieldset-contacts_item">
-          <label class="fieldset-contacts__label" for="phone">Номер телефона</label>
-          <input class="fieldset-contacts__input" type="text" id="phone" name="phone" placeholder="Номер, пожалуйста">
-       </p>
-        <p class="fieldset-contacts_item">
-          <label class="fieldset-contacts__label" for="mail">Адрес почты</label>
-          <input class="fieldset-contacts__input" type="text" id="mail" name="mail" placeholder="Введите почту	&#42">
-       </p>
-      </fieldset>
-      <fieldset class="fieldet-os">
-        <h2 class="fieldet-os__title">С каким приложением путешествовали?</h2>
-        <div class="fieldet-os__wrap">
-          <p class="fieldet-os__item">
-            <input type="radio" id="ios" name="os" value="ios" checked>
-            <label for="ios">Pink для iOS</label>
-          </p>
-          <p class="fieldet-os__item">
-            <input type="radio" id="android" name="os" value="android">
-            <label for="android">Pink на Android</label>
-          </p>
-          <p class="fieldet-os__item">
-            <input type="radio" id="windows" name="os" value="windows">
-            <label for="windows">Windows Phone</label>
-          </p>
-        </div>
-      </fieldset>
-      <fieldset class="fieldset-review">
-        <h2 class="fieldset-review__title">Опишите свои эмоции</h2>
-        <textarea class="fieldset-review__textarea" name="review"  cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-      </fieldset>
-      <div class="competition-form__button-wrap">
-        <button class="competition-form__button" type="submit">Отправить форму</button>
-        <span class="competition-form__hint">&#42 - обязательные поля</span>
       </div>
     </form>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapp">
         <a class="page-footer__logo" href="index.html">Pink</a>
         <ul class="page-footer__social social">
           <li class="social__item">
@@ -130,9 +132,9 @@
             <a class="social__link social__link--yt" href="#">Youtube</a>
           </li>
         </ul>
-        <div class="page-footer__copyright copyright">
-          <span class="copyright__text">Разработано</span>
-          <a class="copyright-link" href="#">HTML-Academy</a>
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-link" href="#">HTML-Academy</a>
         </div>
       </div>
     </footer>
