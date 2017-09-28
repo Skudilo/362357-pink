@@ -57,7 +57,4 @@ git clone SSH-адрес_вашего_форка
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/362357-pink/dev-status.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/362357-pink?type=dev
 
-.upload-form__content {
-  background-color: #f2f2f2;
-
 
