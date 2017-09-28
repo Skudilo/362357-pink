@@ -58,35 +58,4 @@ git clone SSH-адрес_вашего_форка
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/362357-pink?type=dev
 
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 24px;
-  color: : #000;
-}
 
-.visually-hidden {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
-
-.wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration:none;
-}
-
-ul {
-  list-style: none;
-}
